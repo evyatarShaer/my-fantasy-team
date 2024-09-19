@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <script defer src="dist/script.js"></script>
     <title>my fantasy team</title>
 </head>
 <body>
@@ -18,38 +18,38 @@
         <div id="playersContainer">
             <div id="card1" class="cards">
                 <p class="position">Point Guard</p>
-                <p class="name"></p>
-                <p class="three"></p>
-                <p class="two"></p>
-                <p class="points"></p>
+                <p id="pgName" class="name"></p>
+                <p id="pgThree" class="three"></p>
+                <p id="pgTwo" class="two"></p>
+                <p id="pgPoints" class="points"></p>
             </div>
             <div id="card2" class="cards">
                 <p class="position">Shooting Guard</p>
-                <p class="name"></p>
-                <p class="three"></p>
-                <p class="two"></p>
-                <p class="points"></p>
+                <p id="sgName" class="name"></p>
+                <p id="sgThree" class="three"></p>
+                <p id="sgTwo" class="two"></p>
+                <p id="sgPoints" class="points"></p>
             </div>
             <div id="card3" class="cards">
                 <p class="position">Small Forward</p>
-                <p class="name"></p>
-                <p class="three"></p>
-                <p class="two"></p>
-                <p class="points"></p>
+                <p id="sfName" class="name"></p>
+                <p id="sfThree" class="three"></p>
+                <p id="sfTwo" class="two"></p>
+                <p id="sfPoints" class="points"></p>
             </div>
             <div id="card4" class="cards">
                 <p class="position">Power Forward</p>
-                <p class="name"></p>
-                <p class="three"></p>
-                <p class="two"></p>
-                <p class="points"></p>
+                <p id="pfName" class="name"></p>
+                <p id="pfThree" class="three"></p>
+                <p id="pfTwo" class="two"></p>
+                <p id="pfPoints" class="points"></p>
             </div>
             <div id="card5" class="cards">
                 <p class="position">Center</p>
-                <p class="name"></p>
-                <p class="three"></p>
-                <p class="two"></p>
-                <p class="points"></p>
+                <p id="cName" class="name"></p>
+                <p id="cThree" class="three"></p>
+                <p id="cTwo" class="two"></p>
+                <p id="cPoints" class="points"></p>
             </div>
         </div>
 
@@ -66,24 +66,29 @@
 
             <div id="rangeInput">
                 <div>
-                    <input type="range" id="towPercent" 
-                        min="0" max="10000" 
-                        value="2500" step="1">
+                    <input type="range" id="points"
+                        min="0" max="20000" value="1"
+                        oninput="this.nextElementSibling.value = this.value">
+                        <output>0</output>
                 </div>
                 <div>
-                    <input type="range" id="threePrecent" 
-                        min="0" max="10000" 
-                        value="2500" step="1">
+                    <input type="range" id="twoPercent" 
+                        min="0" max="100" 
+                        value="1" step="1"
+                        oninput="this.nextElementSibling.value = this.value">
+                        <output>0</output>
                 </div>
                 <div>
-                    <input type="range" id="points" 
-                        min="0" max="10000" 
-                        value="2500" step="1">
+                    <input type="range" id="threePercent" 
+                        min="0" max="100" 
+                        value="1" step="1"
+                        oninput="this.nextElementSibling.value = this.value">
+                        <output>0</output>
                 </div>
             </div>
             
             <div id="searchButton">
-                <button>Search Player</button>
+                <button id="searcher">Search Player</button>
             </div>
 
             <table id="playersTable">

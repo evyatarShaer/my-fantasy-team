@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "target": "ES2019",
+      "module": "ES6",
+      "moduleResolution": "node",
+      "lib": ["DOM", "ES2019","ES2015.Promise"],
+      "strict": true,
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "skipLibCheck": true,
+      "outDir": "./dist"
+    },
+    "include": ["*.ts"],
+    "exclude": ["node_modules"]
+}
