@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <title>my fantasy team</title>
+</head>
+<body>
+    <header>
+        <h2>NBA FANTASY 2014-2024</h2>
+    </header>
+
+    <main>
+        <h1>My Fantasy Team</h1>
+        
+        <div id="playersContainer">
+            <div id="card1" class="cards">
+                <p class="position">Point Guard</p>
+                <p class="name"></p>
+                <p class="three"></p>
+                <p class="two"></p>
+                <p class="points"></p>
+            </div>
+            <div id="card2" class="cards">
+                <p class="position">Shooting Guard</p>
+                <p class="name"></p>
+                <p class="three"></p>
+                <p class="two"></p>
+                <p class="points"></p>
+            </div>
+            <div id="card3" class="cards">
+                <p class="position">Small Forward</p>
+                <p class="name"></p>
+                <p class="three"></p>
+                <p class="two"></p>
+                <p class="points"></p>
+            </div>
+            <div id="card4" class="cards">
+                <p class="position">Power Forward</p>
+                <p class="name"></p>
+                <p class="three"></p>
+                <p class="two"></p>
+                <p class="points"></p>
+            </div>
+            <div id="card5" class="cards">
+                <p class="position">Center</p>
+                <p class="name"></p>
+                <p class="three"></p>
+                <p class="two"></p>
+                <p class="points"></p>
+            </div>
+        </div>
+
+        <div id="search">
+            <div id="selectPosition">
+                <select id="selector">
+                    <option value="PG">PG</option>
+                    <option value="SG">SG</option>
+                    <option value="SF">SF</option>
+                    <option value="PF">PF</option>
+                    <option value="C">C</option>
+                </select>
+            </div>
+
+            <div id="rangeInput">
+                <div>
+                    <input type="range" id="towPercent" 
+                        min="0" max="10000" 
+                        value="2500" step="1">
+                </div>
+                <div>
+                    <input type="range" id="threePrecent" 
+                        min="0" max="10000" 
+                        value="2500" step="1">
+                </div>
+                <div>
+                    <input type="range" id="points" 
+                        min="0" max="10000" 
+                        value="2500" step="1">
+                </div>
+            </div>
+            
+            <div id="searchButton">
+                <button>Search Player</button>
+            </div>
+
+            <table id="playersTable">
+                <thead>
+                    <tr>
+                        <th>Player</th>
+                        <th>Position</th>
+                        <th>Points</th>
+                        <th>FG%</th>
+                        <th>3P%</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+    
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #133A82;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #133A82;
+}
+
+#playersContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cards {
+    width: 150px;
+    height: 200px;
+    margin: 10px;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #F0F0F0;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.cards:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.position {
+    color: #133A82;
+}
+
+#search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #F0F0F0;
+    margin-bottom: 30px;
+    padding: 15px;
+    width: 90%;
+}
+
+select {
+    margin: 20px
+}
+
+#rangeInput {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    margin: 20px;
+    width: 100%;
+}
+
+input {
+    margin:10px;
+    color: #3587E9;
+    width: 80%;
+}
+
+#searchButton {
+    margin: 20px;
+}
+
+#searchButton button {
+    background-color: #133A82;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+
+
+#playersTable {
+    border: 1px solid #b58d8d;
+    width: 90%;
+    margin: 10px;
+}
+
+th {
+    background-color: #C80528;
+    color: white;
+}
+
+th, td {
+    border: 1px solid #b58d8d;
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+    height: 50px;
+    width: 60px;
+ }
