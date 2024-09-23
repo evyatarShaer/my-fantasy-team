@@ -137,12 +137,17 @@ const runder = async () => {
         
         const tdActions = document.createElement('td');
 
+        const aTag = document.createElement('a');
+        aTag.href = '#playersContainer';
+
         const addBtn = document.createElement('button');
         addBtn.textContent = `Add ${player.playerName} to Current Team`;
         addBtn.id = 'addBtn';
         addBtn.addEventListener('click', () => addToCard(index));
         
-        tdActions.appendChild(addBtn);
+        aTag.appendChild(addBtn);
+
+        tdActions.appendChild(aTag);
         row.appendChild(tdActions);
         
         tbody.appendChild(row);
