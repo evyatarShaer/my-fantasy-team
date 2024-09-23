@@ -67,21 +67,21 @@
             <div id="rangeInput">
                 <div>
                     <input type="range" id="points"
-                        min="0" max="20000" value="1"
+                        min="0" max="20000" value="0"
                         oninput="this.nextElementSibling.value = this.value">
                         <output>0</output>
                 </div>
                 <div>
                     <input type="range" id="twoPercent" 
                         min="0" max="100" 
-                        value="1" step="1"
+                        value="0" step="1"
                         oninput="this.nextElementSibling.value = this.value">
                         <output>0</output>
                 </div>
                 <div>
                     <input type="range" id="threePercent" 
                         min="0" max="100" 
-                        value="1" step="1"
+                        value="0" step="1"
                         oninput="this.nextElementSibling.value = this.value">
                         <output>0</output>
                 </div>
@@ -102,7 +102,7 @@
                         <th>Action</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="tbody">
     
                 </tbody>
             </table>

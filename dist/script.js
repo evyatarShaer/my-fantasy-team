@@ -30,6 +30,7 @@ const getSelectedPlayers = async () => {
 };
 const runder = async () => {
     const players = await getSelectedPlayers() || [];
+    tbody.innerHTML = '';
     const addToCard = (index) => {
         const player = players[index];
         if (player.position === 'C') {
@@ -107,7 +108,7 @@ const runder = async () => {
         addBtn.addEventListener('click', () => addToCard(index));
         tdActions.appendChild(addBtn);
         row.appendChild(tdActions);
-        playersTable.appendChild(row);
+        tbody.appendChild(row);
     });
 };
 const searchButton = document.querySelector('#searcher');

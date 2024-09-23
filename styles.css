@@ -67,11 +67,27 @@ select {
     margin: 20px
 }
 
+#selector {
+    width: 60%;
+    text-align: center;
+    font-size: 16px;
+}
+
+#selectPosition {
+    width: 50%;
+    padding-left: 15%;
+}
+
 #rangeInput {
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin-left: 15%;
     width: 100%;
+}
+
+#rangeInput input {
+   cursor: pointer;
+   width: 80%;
 }
 
 input {

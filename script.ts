@@ -50,6 +50,8 @@ const getSelectedPlayers = async (): Promise<Player[]> => {
 const runder = async () => {
     const players = await getSelectedPlayers() || [];
 
+    tbody.innerHTML = '';
+
     const addToCard = (index: number) => {
         const player = players[index];
         if (player.position === 'C')
@@ -143,7 +145,7 @@ const runder = async () => {
         tdActions.appendChild(addBtn);
         row.appendChild(tdActions);
         
-        playersTable.appendChild(row);
+        tbody.appendChild(row);
     });
 }
 
